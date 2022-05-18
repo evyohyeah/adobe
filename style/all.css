@@ -36,7 +36,7 @@ img {
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     right: 2%;
     top: 50%;
     margin-top: -100px;
@@ -47,7 +47,6 @@ img {
 .slide-ls {
     display: flex;
     flex-wrap: wrap;
-    width: 300vw;
 }
 
 .slide-item {
@@ -129,7 +128,8 @@ img {
 
 
 /* Modules 覆蓋---------------------------- */
-.hover-overlay, .hover-icon {
+.hover-overlay, 
+.hover-icon {
     position: relative;
     display: inline-block;
 }
@@ -170,9 +170,10 @@ img {
 /* Modules 影像---------------------------- */
 .hover-scale {
     overflow: hidden;
+    display: inline-block;
 }
 
-.hover-scale:hover>img {
+.hover-scale:hover > img {
     transform: scale(1.2);
 }
 
@@ -180,7 +181,7 @@ img {
 /* Modules 轉場---------------------------- */
 .hover-transition::after,
 .hover-transition i,
-.hover-scale>img {
-    transition: all .5s;
+.hover-scale > img {
+    transition: .5s;
 }
 
