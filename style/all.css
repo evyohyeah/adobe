@@ -40,6 +40,7 @@ img {
     right: 2%;
     top: 50%;
     margin-top: -100px;
+    z-index: 1;
 }
 
 
@@ -47,12 +48,14 @@ img {
 .slide-ls {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .slide-item {
     padding: 3rem 5rem;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 
 .slide-item-pdf {
@@ -79,6 +82,10 @@ img {
     background-color: #84c922;
 }
 
+.pd {
+    width: 50%;
+}
+
 .pd-tit {
     color: #fff;
     font-size: 1.5em;
@@ -87,7 +94,7 @@ img {
 }
 
 .pd-intro {
-    width: 50%;
+
 }
 
 .pd-desc {
@@ -102,12 +109,16 @@ img {
 .pd-ls {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .pd-item {
     width: 33.33333%;
     padding: 12px;
+}
+
+.pd-item > a {
+    -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0, .3)0, transparent 50%);
 }
 
 
@@ -128,7 +139,7 @@ img {
 
 
 /* Modules 覆蓋---------------------------- */
-.hover-overlay, 
+.hover-overlay,
 .hover-icon {
     position: relative;
     display: inline-block;
@@ -173,7 +184,7 @@ img {
     display: inline-block;
 }
 
-.hover-scale:hover > img {
+.hover-scale:hover>img {
     transform: scale(1.2);
 }
 
@@ -181,7 +192,50 @@ img {
 /* Modules 轉場---------------------------- */
 .hover-transition::after,
 .hover-transition i,
-.hover-scale > img {
+.hover-scale>img {
     transition: .5s;
 }
 
+/* State --------------------------------- */
+.js-nav {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.js-nav-btn {
+    background-color: #fff;
+}
+
+/* RWD------------------------------------ */
+@media screen and (max-width: 1024px) {
+    .pd {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        top: 0;
+        margin-top: 0;
+        left: 0;
+        right: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slide-item {
+        padding: 4rem 2rem 2rem;
+    }
+
+    .pd {
+        width: auto;
+    }
+
+    .pd-head {
+        text-align: center;
+    }
+
+    .pd-item {
+        width: 50%;
+    }
+}
