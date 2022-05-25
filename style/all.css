@@ -48,7 +48,13 @@ img {
 .slide-ls {
     display: flex;
     flex-wrap: wrap;
+    width: 300vw;
     position: relative;
+    transition-duration: .5s;
+    /* 動畫位置需要給初始值，從left: 0; top:0開始移動 */
+    left: 0;
+    top: 0;
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .slide-item {
@@ -93,9 +99,7 @@ img {
     line-height: 1.3em;
 }
 
-.pd-intro {
-
-}
+.pd-intro {}
 
 .pd-desc {
     color: #fff;
@@ -117,8 +121,8 @@ img {
     padding: 12px;
 }
 
-.pd-item > a {
-    -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0, .3)0, transparent 50%);
+.pd-item>a {
+    -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0, .3) 0, transparent 50%);
 }
 
 

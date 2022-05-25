@@ -13,14 +13,16 @@
     <meta property="og:image" content="https://www.adobe.com/thumb.800.480.png">
     <meta property="og:url" content="">
     <meta property="og:locale" content="zh_TW">
+    <link rel="stylesheet" href="./style/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./style/all.css">
+    
 </head>
 
 <body>
@@ -53,13 +55,13 @@
 
                     <ul class="pd-ls row">
                         <li class="pd-item">
-                            <a class="hover-overlay hover-icon hover-transition" href="./images/pdf_1_lg.png">
+                            <a class="hover-overlay hover-icon hover-transition" href="./images/pdf_1_lg.png" data-caption="多裝置世界中最完整的 PDF 解決方案">
                                 <img class="img-resp" src="./images/pdf_1_sm.png" alt="PDF1" width="250" height="141">
                                 <i class="fas fa-search-plus"></i>
                             </a>
                         </li>
                         <li class="pd-item">
-                            <a class="hover-overlay hover-icon hover-transition" href="./images/pdf_2_lg.png">
+                            <a class="hover-overlay hover-icon hover-transition" href="./images/pdf_2_lg.png" data-caption="Acrobat DC 與 Document Cloud 服務">
                                 <img class="img-resp" src="./images/pdf_2_sm.png" alt="PDF2" width="250" height="141">
                                 <i class="fas fa-search-plus"></i>
                             </a>
@@ -94,13 +96,13 @@
                     </article>
                     <ul class="pd-ls row">
                         <li class="pd-item">
-                            <a class="hover-icon hover-transition" href="./images/pdf_1_lg.png">
+                            <a class="hover-icon hover-transition" href="https://youtu.be/M1SfOkesuZw">
                                 <img class="img-resp" src="./images/pr_1_sm.png" alt="Pr1" width="250" height="141">
                                 <i class="fas fa-play"></i>
                             </a>
                         </li>
                         <li class="pd-item">
-                            <a class="hover-icon hover-transition" href="./images/pdf_2_lg.png">
+                            <a class="hover-icon hover-transition" href="https://youtu.be/ezn3PiFgdQ4">
                                 <img class="img-resp" src="./images/pr_2_sm.png" alt="Pr2" width="250" height="141">
                                 <i class="fas fa-play"></i>
                             </a>
@@ -121,17 +123,32 @@
                     </article>
                     <ul class="pd-ls row">
                         <li class="pd-item">
-                            <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_1_lg.png">
+                            <a 
+                            class="hover-overlay hover-scale hover-transition" 
+                            href="javascript:;" 
+                            data-type="iframe" 
+                            data-src="https://blog.adobe.com/"
+                            >
                                 <img class="img-resp" src="./images/ps_1_sm.png" alt="Ps1" width="250" height="141">
                             </a>
                         </li>
                         <li class="pd-item">
-                            <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_2_lg.png">
+                            <a
+                            class="hover-overlay hover-scale hover-transition" 
+                            href="javascript:;"
+                            data-type="iframe"
+                            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6786905347967!2d121.51398531500654!3d25.044975983967262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973107749ad%3A0x3eca9af750aa028!2z6LWr57a16Zu76IWm6Kit6KiI5Z-56KiT5a246ZmiLeermeWJjeWtuOmZog!5e0!3m2!1szh-TW!2stw!4v1653480577027!5m2!1szh-TW!2stw"
+                            >
                                 <img class="img-resp" src="./images/ps_2_sm.png" alt="Ps2" width="250" height="141">
                             </a>
                         </li>
                         <li class="pd-item">
-                            <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_2_lg.png">
+                            <a
+                            class="hover-overlay hover-scale hover-transition" 
+                            href="javascript:;"
+                            data-type="iframe"
+                            data-src="https://cdn2.hubspot.net/hub/53/file-13204607-pdf/docs/introduction-to-seo-ebook.pdf"
+                            >
                                 <img class="img-resp" src="./images/ps_3_sm.png" alt="Ps3" width="250" height="141">
                             </a>
                         </li>
@@ -183,6 +200,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fancybox的js一定要放在jquery之後 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
 </body>
 
