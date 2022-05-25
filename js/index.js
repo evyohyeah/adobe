@@ -76,4 +76,33 @@ $('#Btn6').click(function () {
     });
 });
 
-$('.pd-item > a').fancybox();
+$('.pd-item > a').fancybox({
+    // protect: false,
+    loop: true,
+    animationDuration: 500,
+    transitionDuration: 1000,
+    transitionEffect: 'circular',
+    // keyboard: true,
+    // fullScreen: {
+    //     autoStart: true
+    // },
+    // infobar: true,
+    // toolbar: true,
+    smallBtn: true,
+    // arrows : true,
+    slideShow: {
+        autoStart: true,
+        speed: 3000
+    },
+    thumbs: {
+        autoStart: true
+    },
+    button: ['zoom', 'share', 'slideShow', 'fullScreen', 'download', 'thumbs', 'close'],
+    media: {
+        youtube: {
+            params: {
+                autoplay: false
+            }
+        }
+    }
+});
